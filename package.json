@@ -1,0 +1,13 @@
+{
+  "name": "enabot",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "A minimal Discord bot that logs voice channel activites.",
+  "main": "index.js",
+  "author": "Yejia995",
+  "license": "Unlicense",
+  "dependencies": {
+    "@types/node": "*",
+    "discord.js": "*"
+  }
+}
