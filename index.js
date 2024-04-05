@@ -21,9 +21,9 @@ client.on('voiceStateUpdate', (old_state, new_state) => {
   if (!old_state.channel && new_state.channel) {
     log_message = `<t:${timestamp}:T> <@${member_id}> :wheelchair: <#${new_state.channel.id}>`;
   } else if (old_state.channel && !new_state.channel) {
-    log_message = `<t:${timestamp}:T> <@${member_id}> :wheelchair: <#${old_state.channel.id}> :wheelchair:`;
+    log_message = `<t:${timestamp}:T> <@${member_id}> <#${old_state.channel.id}> :wheelchair:`;
   } else if (old_state.channel?.id !== new_state.channel?.id) {
-    log_message = `<t:${timestamp}:T> <@${member_id}> :wheelchair: <#${old_state.channel.id}> :wheelchair: <#${new_state.channel.id}>`;
+    log_message = `<t:${timestamp}:T> <@${member_id}> <#${old_state.channel.id}> :wheelchair: <#${new_state.channel.id}>`;
   }
 
   if (log_message) {
