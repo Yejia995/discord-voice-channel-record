@@ -16,4 +16,4 @@ docker run -d \
 ```
 
 > [!TIP]
-> You may simply replace `docker` with `podman` if you're using podman.
+> Please note that the `CHANNEL_ID` refers to the text channel where messages will be posted, not the voice channel. The bot will log all activities in voice channels where it has permission to view.
